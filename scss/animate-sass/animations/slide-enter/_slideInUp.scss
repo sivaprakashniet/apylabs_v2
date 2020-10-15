@@ -1,0 +1,33 @@
+@if $use-slideInUp == true {
+
+	@-webkit-keyframes slideInUp {
+		0% {
+			-webkit-transform: translate3d(0, 30px, 0);
+			visibility: visible;
+            opacity: 0;
+		}
+
+		100% {
+			-webkit-transform: translate3d(0, 0, 0);
+            opacity: 1;
+		}
+	}
+
+	@keyframes slideInUp {
+		0% {
+			transform: translate3d(0, 30px, 0);
+			visibility: visible;
+            opacity: 0;
+		}
+
+		100% {
+			transform: translate3d(0, 0, 0);
+            opacity: 1;
+		}
+	}
+
+	.slideInUp {
+		@include animate-prefixer(animation-name, slideInUp);
+	}
+
+}

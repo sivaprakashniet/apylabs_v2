@@ -1,0 +1,56 @@
+//Variables
+$primary-shade-1: rgba(251,131,61,.05);
+$primary-shade-2: rgba(251,131,61,.1);
+$primary-shade-3: #fb833d;
+$primary-shade-4: #fa630b;
+
+$primary-color: $primary-shade-3; 
+$primary-color-2: $primary-shade-4;
+$secondary-color: rgba(0,0,0,.65);
+$grey-color-1: rgba(0,0,0,.45);
+$grey-color-2: rgba(0,0,0,.85);
+
+$black-color: #000000;
+$white-color: #ffffff;
+$text-color: #212529;
+$title-color: #063302; 
+
+$bg-color-1: rgba(0,0,0,.03);
+$bg-color-2: #f5f2ee; //#f9f6f4
+$bg-color-3: #FEEFED;
+$bg-color-4: #FFF6F3;
+$bg-color-5: #fbf9f7;
+
+//Border Color
+$border-color-1: rgba(0,0,0,.1);
+
+
+$font-body: 'PT Sans', sans-serif;
+$font-head: 'PT Sans', sans-serif;
+$font-cursive: $font-head;
+
+
+
+ 
+$use-slideInUp: true;
+$use-slideInDown: true;
+$use-fadeIn: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+$use-zoomIn: true;
+$base-duration : 0.5s !default;
+
+//Init
+@import "modules/init";
+//@import "modules/fonts";
+
+@import "modules/icofont";
+@import "animate-sass/animate";
+@import "modules/slick";
+
+//Modules
+@import "modules/header";
+@import "modules/footer";
+@import "modules/page";
+@import "modules/responsive";
+ 

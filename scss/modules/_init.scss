@@ -1,0 +1,186 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+}
+html {
+    font-size: 62.5%; //Font Size 100% means 1rem = 16px If Font Size 62.5% means 1rem = 10px.
+}
+html, body{
+	height: 100%;
+}
+body{
+	position: relative;
+	@media (min-width: 768px){
+		padding-top: 7.8rem;
+	}
+}
+*:focus{
+	outline: none !important;
+}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+}
+ 
+// Transition Effects
+@mixin all-transition{
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+@mixin transition2($prop1, $prop2,$td:0.3s,$tf:ease-in-out){
+	transition: $prop1 $td $tf, $prop2 $td $tf;
+	-webkit-transition: $prop1 $td $tf, $prop2 $td $tf;
+	-moz-transition: $prop1 $td $tf, $prop2 $td $tf;
+}
+@mixin transition1($prop, $td:0.3s, $tf:ease-in-out){
+	transition: $prop $td $tf;
+	-webkit-transition: $prop $td $tf;
+	-moz-transition: $prop $td $tf;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: 700;
+	font-family: $font-cursive;
+}
+b, strong{
+	font-weight: 700;
+} 
+
+// Forms
+.custom-select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+a{
+	text-decoration: none !important;
+}
+.a-underline{
+	text-decoration: underline !important;
+}
+
+//Buttons
+.br30{
+	border-radius: 3rem;
+}
+.br15{
+    border-radius: 1.5rem;
+}
+.btn{
+	font-weight: 700;
+	&:focus{
+		outline: 0 !important;
+		box-shadow: none !important;
+	}
+} 
+.btn-primary{
+	color: $white-color !important;
+}
+
+//Carousels
+.carousel-indicators{
+	&.carousel-indicators__outline{
+		li{
+			background-color: transparent;
+			border: 0.2rem solid #fff;
+			opacity: 1;
+			width: 0.8rem;
+			height: 0.8rem;
+			&.active{
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.minw120{
+	min-width: 12rem;
+}
+.hp-100{
+	height: 100%;
+}
+.mb-20{
+	margin-bottom: 2rem;
+}
+.mt-50{
+	margin-top: 5rem;
+}
+.pt-20{
+	padding-top: 2rem !important;
+}
+.p-10{
+	padding: 1rem;
+}
+.rm-30{
+    >div{
+        margin-bottom: 3rem;
+    }
+}
+.row20{
+    margin-left: -20px;
+    margin-right: -20px;
+    >div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.row10{
+	margin-left: -10px;
+	margin-right: -10px;
+	>div{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.row5{
+	margin-left: -5px;
+	margin-right: -5px;
+	>div{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+.row7{
+	margin-left: -7px;
+	margin-right: -7px;
+	>div{
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+.row2{
+	margin-left: -2px;
+	margin-right: -2px;
+	>div{
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+.sicon24{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.sicon20{
+	width: 2rem;
+	height: 2rem;
+}
+.sicon15{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.sicon18{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.mandatory {
+    color: #ec3535;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.black-bg{
+	background-color: #000;
+}
