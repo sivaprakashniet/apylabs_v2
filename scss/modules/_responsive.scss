@@ -181,6 +181,13 @@
     }
     .social-list{
         justify-content: center;
+        .contact-info &{
+            justify-content: start;
+        }
+    }
+    .contact-info{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     
@@ -294,6 +301,18 @@
     .testimonial-item__author > h6{
         font-size: 2rem;
         line-height: 3rem;
+    }
+    .contact-form-wrapper{
+        .section-head{
+            >h2{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .contact-info{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 

@@ -29,7 +29,7 @@
                             <li class="nav-item"><a href="team.php">About</a></li>
                             <li class="nav-item"><a href="team.php">Our Services</a></li>
                             <li class="nav-item"><a href="team.php">Works</a></li>
-                            <li class="nav-item"><a href="team.php">Contact US</a></li>
+                            <li class="nav-item<?php echo (isset($active_menu) && $active_menu == 'contact')?' active':''; ?>"><a href="contact.php">Contact US</a></li>
                         </ul>
                     </div>
                 </div>
