@@ -267,3 +267,108 @@
 .w-200{
     width: 20rem;
 }
+.page-head{
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    @media (min-width: 768px){
+        margin-bottom: 5rem;
+    }
+    @media (min-width: 1024px){
+        margin-bottom: 7rem;
+    }
+    @media (min-width: 1200px){
+        margin-bottom: 10rem;
+    }
+    >h2{
+        font-size: 3.8rem;
+        line-height: 5.2rem;
+        @media (max-width:767px){
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+        }
+    }
+    >h5{
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 500;
+        @media (max-width:767px){
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+    >p{
+        color: $secondary-color;
+        line-height: 3.2rem;
+        @media (max-width:767px){
+            line-height: 2.5rem;
+        }
+    }
+}
+.work-item{
+    display: block;
+    text-decoration: none !important;
+    position: relative;
+    &:hover{
+        .work-item{
+            &__img{
+                .img-fluid{
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+            }
+            &__overlay{
+                opacity: 1;
+                z-index: 2;
+            }
+        }
+    }
+    &__img{
+        overflow: hidden;
+        .img-fluid{
+            transform: scale(1);
+            -webkit-transition: -webkit-transform 0.6s ease;
+            -moz-transition: -moz-transfrom 0.6s ease;
+            -ms-transition: -ms-transform 0.6s ease;
+            transition: transform 0.6s ease;
+        }
+    }
+    &__overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: rgba(251, 131, 61, 0.8);
+        opacity: 0;
+        z-index: -1;
+        -webkit-transition: opacity 0.5s ease, z-index 0.5s ease;
+        -moz-transition: opacity 0.5s ease, z-index 0.5s ease;
+        -ms-transition: opacity 0.5s ease, z-index 0.5s ease;
+        transition: opacity 0.5s ease, z-index 0.5s ease;
+        padding: 1.5rem;
+    }
+    &__info{
+        color: $white-color;
+        >h4{
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+        }
+        @media (max-width:767px){
+            >h4{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+            >p{
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
